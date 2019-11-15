@@ -1,0 +1,183 @@
+html 
+{
+background: #19181F;
+color: #fff;
+max-width: 80%;
+margin: 0 auto;
+}
+
+.header 
+{
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 40px auto;
+}
+
+.header .logo
+{
+  width: 150px;
+}
+
+ .header .menu button
+{
+  width: 50px;
+  background: none;
+  border: none;
+}
+/* ================================== */
+
+
+.presentation
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 70%;
+  margin: 200px auto ;
+  gap: 50px;
+}
+.presentation .profile
+{
+  max-width: 350px;
+}
+
+.presentation .bio
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.presentation .bio h2
+{
+color: #7159c1;
+font-weight: bold;
+font-size: 1.7em;
+text-transform: uppercase;
+margin: 20px 0;
+}
+
+.presentation .bio p
+{
+  font-size: 1.1em;
+}
+/* ================================== */
+
+.web-design
+{
+  max-width: 70%;
+  margin: 30px auto 100px ;
+}
+
+
+.web-design h1::before
+{
+  content: '';
+  display: table;
+  width: 40px;
+  height: 25px;
+  background: #f7df1e;
+  margin: 0 20px 0 0 ;
+
+}
+
+.web-design h1
+{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f7df1e;
+  font-size: 1.6em;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+
+
+}
+
+
+.web-design .cards
+{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  
+}
+.web-design .cards .card-item
+{
+  max-width: 400px;
+}
+
+/* ================================== */
+
+.app-design
+{
+  max-width: 50%;
+  margin: 30px auto 100px;
+}
+
+.app-design h1::before
+{
+  content: '';
+  display: table;
+  width: 40px;
+  height: 25px;
+  background: #04d361;
+  margin: 0 20px 0 0 ;
+
+}
+
+.app-design h1
+{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #04d361;
+  font-size: 1.6em;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.app-design .card-app
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.app-design .card-app .item-app
+{
+  transform: rotate(45deg);
+  max-width: 200px;
+}
+
+.app-design .card-app .item-app:hover
+{
+  transform: rotate(0deg) scale(1.4);
+  transition: .5s;
+  z-index: 2000;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+footer .icons
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+footer .icons .rs
+{
+  margin: 100px 20px 200px;
+  width: 50px;
+
+}
+
+footer .icons .rs :hover
+{
+  transform: translateY(-5px);
+}

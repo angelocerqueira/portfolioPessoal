@@ -1,0 +1,14 @@
+@import 'all.css';
+@import 'home.css';
+@import 'about.css';
+@import 'contact.css';
+
+h1,h2,h3
+{
+font-family: passion-one, sans-serif;
+}
+
+p, input, label, textarea
+{
+font-family: 'Poppins', sans-serif;}
+/* font-family: germania-one, sans-serif; */
