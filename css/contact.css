@@ -85,4 +85,21 @@ grid-template-columns: repeat(2, 1fr);
   transition: .3s;
 }
 
-
+@media(max-width: 769px)
+{
+  .inputs
+{
+display: flex;
+flex-direction: column;
+}
+.inputs .input-group input
+{
+  max-width: 100%;
+  padding: 15px 30wpx;
+  background: rgba(4, 211, 97, 40%);
+  border: 0;
+  border-radius: 8px;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 100%);
+}
+}

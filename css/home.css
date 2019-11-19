@@ -1,9 +1,15 @@
 html 
 {
-background: #19181F;
-color: #fff;
-max-width: 80%;
-margin: 0 auto;
+  background: #19181F;
+
+}
+
+.container
+{
+  color: #fff;
+  max-width: 80%;
+  margin: 20px auto;
+
 }
 
 .header 
@@ -12,11 +18,12 @@ margin: 0 auto;
   justify-content: space-between;
   max-width: 90%;
   margin: 40px auto;
+  align-items: center;
 }
 
 .header .logo
 {
-  width: 150px;
+  max-width: 150px;
 }
 
  .header .menu button
@@ -25,9 +32,9 @@ margin: 0 auto;
   background: none;
   border: none;
 }
+
+
 /* ================================== */
-
-
 .presentation
 {
   display: grid;
@@ -36,9 +43,15 @@ margin: 0 auto;
   margin: 200px auto ;
   gap: 50px;
 }
+
 .presentation .profile
 {
   max-width: 350px;
+}
+.presentation .profile img
+{
+  border-radius: 20px;
+
 }
 
 .presentation .bio
@@ -62,6 +75,25 @@ margin: 20px 0;
 {
   font-size: 1.1em;
 }
+
+@media(max-width: 769px)
+{
+  .presentation
+  {
+    display: flex;
+   flex-direction: column;
+    max-width: 70%;
+    margin: 100px auto 80px;
+   align-items: center;
+  }
+  .presentation .bio
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 /* ================================== */
 
 .web-design
@@ -69,7 +101,6 @@ margin: 20px 0;
   max-width: 70%;
   margin: 30px auto 100px ;
 }
-
 
 .web-design h1::before
 {
@@ -95,24 +126,47 @@ margin: 20px 0;
 
 }
 
-
-.web-design .cards
+.web-design .cards ul
 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 20px;
+  align-items: center;
+  justify-content: center;
+
   
 }
 .web-design .cards .card-item
 {
   max-width: 400px;
+  transition: all .4s ease-in-out;
 }
 
+.web-design .cards .card-item:hover
+{
+  text-align: center;
+  margin: -10px;
+  cursor: pointer;  
+
+}
+
+@media(max-width:769px)
+{
+  .web-design .cards ul
+  {
+    display: flex;
+  }
+  .web-design .cards .card-item
+{
+    max-width: 100%;
+    transition: all .4s ease-in-out;
+}
+}
 /* ================================== */
 
 .app-design
 {
-  max-width: 50%;
+  max-width: 70%;
   margin: 30px auto 100px;
 }
 
@@ -133,13 +187,15 @@ margin: 20px 0;
   text-transform: uppercase;
   color: #04d361;
   font-size: 1.6em;
-  margin: 20px 0;
+  margin: 40px 0;
   display: flex;
   align-items: center;
 }
 
-.app-design .card-app
-{
+.app-design .card-app ul
+{  
+  max-width: 70%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 20px;
@@ -149,17 +205,44 @@ margin: 20px 0;
 {
   transform: rotate(45deg);
   max-width: 200px;
+  transition: all 1s;
 }
 
 .app-design .card-app .item-app:hover
 {
-  transform: rotate(0deg) scale(1.4);
-  transition: .5s;
+  transform: rotate(0deg) scale(1.8);
+  transition: .8s;
   z-index: 2000;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 50px;
   
 }
+
+@media(max-width:769px)
+{
+  .app-design .card-app ul
+{  
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+}
+.app-design .card-app .item-app
+{
+  transform: rotate(0);
+  max-width: 250px;
+  transition: all 1s;
+}
+.app-design .card-app .item-app:hover
+{
+  transform: rotate(0deg) scale(1);
+  transition: .8s;
+  z-index: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  
+}
+}
+/* ========================================= */
 
 footer .icons
 {
@@ -174,10 +257,12 @@ footer .icons .rs
 {
   margin: 100px 20px 200px;
   width: 50px;
+  transition: all .7s ease-in-out;
 
 }
 
-footer .icons .rs :hover
+footer .icons .rs:hover
 {
-  transform: translateY(-5px);
+  transform: translateY(-9px);
 }
+

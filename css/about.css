@@ -1,3 +1,168 @@
+/* ================================== */
+.presentationAbout
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 70%;
+  margin: 200px auto ;
+  gap: 50px;
+}
+
+.presentationAbout .profile
+{
+  max-width: 350px;
+}
+.presentationAbout .profile img
+{
+  border-radius: 20px;
+
+}
+
+.presentationAbout .bio
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.presentationAbout .bio h2
+{
+color: #7159c1;
+font-weight: bold;
+font-size: 1.7em;
+text-transform: uppercase;
+margin: 20px 0;
+}
+
+.presentationAbout .bio p
+{
+  font-size: 1.1em;
+  color: #fff;
+}
+
+@media(max-width: 769px)
+{
+  .presentationAbout
+  {
+    display: flex;
+   flex-direction: column;
+    max-width: 70%;
+    margin: 100px auto 80px;
+   align-items: center;
+  }
+  .presentationAbout .bio
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .presentationAbout .bio p
+{
+  font-size: .9em;
+  color: #fff;
+}
+}
+/* ================================== */
+
+.web-designAbout
+{
+  max-width: 70%;
+  margin: 30px auto 100px ; 
+}
+
+.web-designAbout h1::before
+{
+  content: '';
+  display: table;
+  width: 40px;
+  height: 25px;
+  background: #f7df1e;
+  margin: 0 20px 0 0 ;
+
+}
+
+.web-designAbout h1
+{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f7df1e;
+  font-size: 1.6em;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+
+
+}
+
+.web-designAbout .cards ul
+{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+
+  
+}
+.web-designAbout .cards .card-item
+{
+  max-width: 450px;
+  transition: all .4s ease-in-out;
+}
+
+.web-designAbout .cards .card-item:hover
+{
+  text-align: center;
+  margin: -10px;
+  cursor: pointer;  
+
+}
+
+@media(max-width:769px)
+{
+  .web-designAbout .cards ul
+  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  .web-designAbout .cards .card-item
+{
+    max-width: 100%;
+    transition: all .4s ease-in-out;
+    margin: 10px;
+}
+.web-designAbout h1::before
+{
+  content: '';
+  display: table;
+  width: 20px;
+  height: 15px;
+  background: #f7df1e;
+  margin: 0 10px 0 0 ;
+
+}
+
+.web-designAbout h1
+{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f7df1e;
+  font-size: 1em;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+
+
+}
+}
+/* ================================== */
+
+
 .courses h1::before, .events h1::before
 {
   content: '';
@@ -35,21 +200,53 @@
 }
 .courses, .events
 {
-  max-width: 80%;
+  max-width: 70%;
   margin: 100px auto;
 }
 
-.card-courses, .card-events
+.card-courses ul, .card-events ul
 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
   margin: 30px 0;
 }
 
 .course-item, .event-item
 {
-max-width: 400px;
+max-width: 550px;
+}
+
+@media(max-width: 769px){
+  
+.events h1,
+.courses h1
+  {
+  font-size: 1em;
+    
+  }
+  .courses h1::before, .events h1::before
+  {
+    content: '';
+    display: table;
+    width: 20px;
+    height: 15px;
+    background: #7159c1;
+    margin: 0 20px 0 0 ;
+  
+  }
+
+  .card-courses ul, .card-events ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  margin: 0;
+}
+
+
+
 }
