@@ -2,6 +2,11 @@
 @import 'home.css';
 @import 'about.css';
 @import 'contact.css';
+@import 'menu-mobile.css';
+@import 'slide.css';
+@import 'slide2.css';
+@import 'aboutSlide.css';
+@import 'aboutSlide2.css';
 
 h1,h2,h3
 {
@@ -12,3 +17,4 @@ p, input, label, textarea
 {
 font-family: 'Poppins', sans-serif;}
 /* font-family: germania-one, sans-serif; */
+

@@ -1,0 +1,38 @@
+@media(max-width: 768px)
+{
+
+
+.slideWrapper2{
+  overflow: hidden;
+  padding: 100px 0 0 0;
+}
+
+.slide2{
+  display: flex;
+}
+.slide2:hover{
+  will-change: transform;
+
+}
+
+.slide2 li{
+  /* flex: 50%;  */
+  width: 90%;
+  flex-shrink: 0;
+  max-width: 100%;
+  margin: 0 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+  opacity: .8;
+  transform: scale(0.8);
+  transition: .4s;
+}                                           
+
+                                      
+.slide2 li.active
+{
+  opacity: 1;
+  transform: scale(1);
+}
+}

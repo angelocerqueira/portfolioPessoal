@@ -1,24 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Angel Dev</title>
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    
-  <header class="header">
-    <div class="logo"> <img src="/assets/logo.png" alt="" srcset=""></div>
-    <div class="menu"><button> <img src="/assets/menu.png" alt=""></button></div>
-  </header>
+<?php include_once('../header.php');?>
 
-  <section class="presentation">
-    <div class="profile"><img src="/assets/profile-about.png" alt=""></div>
+  <section class="presentationAbout">
+    <div class="profile"><img src="../assets/angelo.jpg" alt=""></div>
     <div class="bio">
-      <h2>HI, I'M ÂNGELO.  </h2>
+      <h2>HI, I'M ÂNGELO.</h2>
       <p> Encontrei neste espaço uma maneira de expor um pouco sobre mim e minha
          habilidades como UI e UX designer. Pegue um café e relaxe um pouco, 
         pode vir a  gostar do conteúdo presente. </p>
@@ -29,29 +14,34 @@
     </div>
   </section>
 
-  <section class="web-design">
+  <section class="web-designAbout">
     <div class="titulo">
       <h1>PROJETOS PESSOAIS</h1>
     </div>
     <div class="cards">
+      <ul>
       <li class="card-item"> <img src="/assets/web-card.png" alt=""></li>
       <li class="card-item"> <img src="/assets/web-card.png" alt=""></li>
-     
+    </ul>
     </div>
   </section>
-  <section class="app-design">
+  <section class="app-design" style="display: none;">
       <div class="titulo">
       </div>
     <div class="card-app">
+      <ul>
       <li class="item-app"><a href=""><img src="/assets/app-card.png" alt=""></a></li>
       <li class="item-app"><a href=""><img src="/assets/app-card.png" alt=""></a></li>
       <li class="item-app"><a href=""><img src="/assets/app-card.png" alt=""></a></li>
+    </ul>
     </div>
+
   </section>
 
   <section class="courses">
     <div class="titulo"> <h1>Cursos</h1></div>
-    <div class="card-courses">
+    <div class="card-courses slideWrapper3">
+      <ul class="slide3">
       <li class="course-item"><a href=""><img src="/assets/card-course.png" alt=""></a></li>
       <li class="course-item"><a href=""><img src="/assets/card-course.png" alt=""></a></li>
       <li class="course-item"><a href=""><img src="/assets/card-course.png" alt=""></a></li>
@@ -60,28 +50,20 @@
       <li class="course-item"><a href=""><img src="/assets/card-course.png" alt=""></a></li>
       <li class="course-item"><a href=""><img src="/assets/card-course.png" alt=""></a></li>
       <li class="course-item"><a href=""><img src="/assets/card-course.png" alt=""></a></li>
-
+    </ul>
     </div>
   </section>
 
   <section class="events">
     <div class="titulo"><h1>Eventos</h1> </div>
-    <div class="card-events">
+    <div class="card-events slideWrapper4">
+      <ul class="slide4">
       <li class="event-item"><a href=""><img src="/assets/card-course.png" alt=""></a></li>
       <li class="event-item"><a href=""><img src="/assets/card-course.png" alt=""></a></li>
       <li class="event-item"><a href=""><img src="/assets/card-course.png" alt=""></a></li>
       <li class="event-item"><a href=""><img src="/assets/card-course.png" alt=""></a></li>
+    </ul>
     </div>
   </section>
 
-  <footer>
-    <div class="icons">
-      <li class="rs"><a href=""><img src="/assets/linkedin.png" alt=""></a></li>
-      <li class="rs"><a href=""><img src="/assets/github.png" alt=""></a></li>
-      <li class="rs"><a href=""><img src="/assets/telegram.png" alt=""></a></li>
-      
-    </div>
-  </footer>
-  <script src="//use.edgefonts.net/passion-one;germania-one.js"></script>
-</body>
-</html>
+  <?php include_once('../footer.php');?>
